@@ -1,8 +1,31 @@
 import '../styles/globals.css'
+import React from 'react';
 import type { AppProps } from 'next/app'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline/>
+      <React.Suspense>
+        <React.StrictMode>
+          <React.Fragment>
+            <Component {...pageProps} />
+          </React.Fragment>
+        </React.StrictMode>
+      </React.Suspense>
+    </ThemeProvider>
+    
+    
+  )
+    
 }
 
 export default MyApp
