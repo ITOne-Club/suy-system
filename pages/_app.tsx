@@ -1,3 +1,7 @@
+// Copyright true 2022. All Rights Reserved.
+// Node module: suy-frontend
+// This file is licensed under the Creative Commons Attribution Non Commercial No Derivatives 2.0
+
 import '../styles/globals.css'
 import React from 'react';
 import type { AppProps } from 'next/app'

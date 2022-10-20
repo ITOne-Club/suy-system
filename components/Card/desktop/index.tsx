@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import CardMUI from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -13,7 +13,8 @@ type props = {
   down?: number;
 }
 
-function Card(props: props) {
+
+export default function index(props: props) {
   return (
     <CardMUI sx={{
       maxWidth: 450,
@@ -44,5 +45,3 @@ function Card(props: props) {
     </CardMUI>
   )
 }
-
-export default Card
