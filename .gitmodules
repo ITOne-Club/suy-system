@@ -1,0 +1,8 @@
+[submodule "frontend"]
+  path = suy-system
+  url = https://github.com/ITOne-Club/suy-system.git  
+  branch = frontend
+[submodule "admin-dash"]
+  path = suy-system
+  url = https://github.com/ITOne-Club/suy-system.git  
+  branch = admin-dash
