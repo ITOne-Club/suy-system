@@ -1,3 +1,7 @@
+[submodule "changelog"]
+  path = changelog
+  url = https://github.com/ITOne-Club/changelog.git  
+  branch = changelog
 [submodule "frontend"]
   path = suy-system
   url = https://github.com/ITOne-Club/suy-system.git  
